@@ -1,0 +1,17 @@
+# Rust
+debug/
+target/
+**/*.rs.bk
+*.pdb
+
+# IDE
+.idea/
+.vscode/
+
+# JS/TS
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
