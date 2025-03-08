@@ -1,0 +1,129 @@
+/* Général */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Conteneur principal */
+  .container {
+    background: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* En-tête */
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2a5298;
+    margin-bottom: 20px;
+  }
+
+  /* Labels et Inputs */
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1.5px solid #ddd;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+  }
+
+  textarea {
+    resize: none;
+    height: 120px;
+  }
+
+  /* Bouton */
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #2a5298;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background: #1e3c72;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+  }
+
+  /* Progress Bar */
+  .progress-display {
+    margin-top: 20px;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .progress-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+  }

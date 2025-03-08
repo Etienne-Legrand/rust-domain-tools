@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Générateur de domaines</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Générateur de domaines</h1>
+      <form id="domainForm">
+        <label for="length">Longueur des noms de domaine (lettres):</label>
+        <input
+          type="number"
+          id="length"
+          min="1"
+          max="10"
+          placeholder="Ex: 3"
+          required
+        />
+
+        <label for="tlds">TLDs (séparés par des virgules):</label>
+        <textarea id="tlds" placeholder="Ex: com,net,org" required></textarea>
+
+        <div id="progressDisplay" class="progress-display"></div>
+        <div class="progress-container">
+          <div id="progressBar" class="progress-bar">0%</div>
+        </div>
+
+        <button type="button" onclick="startGeneration()">
+          Générer et télécharger le ZIP
+        </button>
+      </form>
+      <div class="footer">© 2024 Générateur de domaines</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
