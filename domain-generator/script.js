@@ -126,8 +126,8 @@ function startGeneration() {
       .filter((tld) => tld.length > 0);
 
     // Validation des entrées
-    if (isNaN(length) || length < 1 || length > 10) {
-      alert("Veuillez saisir une longueur valide entre 1 et 10 caractères.");
+    if (isNaN(length) || length < 1 || length > 6) {
+      alert("Veuillez saisir une longueur valide entre 1 et 6 caractères.");
       return;
     }
 
