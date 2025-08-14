@@ -80,7 +80,7 @@ impl FrDomainChecker {
             return Ok(false);
         }
         
-        Ok(body.contains("is available"))
+        Ok(body.contains("available"))
     }
 
     // Traite tous les domaines du fichier CSV
@@ -125,6 +125,7 @@ impl FrDomainChecker {
         }
 
         writer.flush()?;
+        println!("\nRésultats complets sauvegardés dans {}", output_file);
         Ok(())
     }
 } 

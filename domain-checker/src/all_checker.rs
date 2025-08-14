@@ -70,6 +70,7 @@ impl AllDomainChecker {
         }
 
         writer.flush()?;
+        println!("\nRésultats complets sauvegardés dans {}", output_file);
         Ok(())
     }
 } 
