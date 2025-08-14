@@ -1,5 +1,5 @@
 use anyhow::Result;
-use back_check_domain::all_checker::AllDomainChecker;
+use domain_checker::all_checker::AllDomainChecker;
 
 #[tokio::main]
 async fn main() -> Result<()> {
